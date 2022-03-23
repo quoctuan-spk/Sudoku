@@ -1,3 +1,2 @@
 # sudoku
-Hi there,
-In the post, I wil to show you how to train basic model to solving sudoku, 
+In this article I will show you how to train the identification of digits to solve sudoku.
