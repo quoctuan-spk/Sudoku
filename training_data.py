@@ -78,8 +78,10 @@ def draw_plot(History, plot_path):
 def main():
     (train_data_1d,train_labels,test_data_1d,test_labels) = pre_data()
     model = create_model()
-    history = train(model,train_data_1d,train_labels,test_data_1d,test_labels, batch_size)
-    draw_plot(history)
+    weight_path = ""
+    plot_path = ""
+    history = train(model,train_data_1d,train_labels,test_data_1d,test_labels, batch_size, weight_path)
+    draw_plot(history, plot_path)
 
 if __name__ == "__main__":
     main()

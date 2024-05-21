@@ -100,7 +100,6 @@ def display_result(solution,template,image):
     
     cv2.imshow("Solve Sudoku", image)
 
-
 def main() -> None:
     model = load_model("weights/digits_weight_10_mac.h5")
     image_path = "/Users/tuantran/Desktop/Sudoku/images/1.png"
@@ -112,7 +111,6 @@ def main() -> None:
             # Construct the full file path and append to the list
             image_path = os.path.join(images_path, file_name)
             
-
             (height, width, image_resize, image_binary) = pre_data(image_path)
             solution, template = predict_solve(model=model, height=height, width=width,image_binary=image_binary)
 
