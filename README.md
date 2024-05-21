@@ -13,3 +13,6 @@ The data set used in this project with about 1000 images per number.
 ![image](https://github.com/quoctuan-spk/Sudoku/blob/master/results/12.png)
 ![image](https://github.com/quoctuan-spk/Sudoku/blob/master/results/4.png)
 ![image](https://github.com/quoctuan-spk/Sudoku/blob/master/results/sudoku1.png)
+
+## Platform
+This program can work on Window, Linux, Mac as well

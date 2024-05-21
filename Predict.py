@@ -12,8 +12,8 @@ image = cv2.imread("images/"+name)
 mnist = False
 if mnist:
     # ---Load model va trong so ----
-    model = load_model("weights/model_sudoku.h5")
-    model.load_weights("weights/weight_sudoku.hdf5")
+    model = load_model("weights/model_sudoku_mac.weights.h5")
+    model.load_weights("weights/weight_sudoku_mac.weights.h5")
     # Chuyen ve anh xam
     image_gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
     # Reseze ve cung kich thuoc voi tap train

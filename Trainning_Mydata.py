@@ -126,14 +126,14 @@ def myModel():
     model.add(Dropout(0.5))
     model.add(Dense(noOfClasses, activation='softmax'))
 
-    model.compile(Adam(lr=0.001),loss='categorical_crossentropy',metrics=['accuracy'])
+    model.compile(Adam(learning_rate=0.001),loss='categorical_crossentropy',metrics=['accuracy'])
     return model
 
 model = myModel()
 print(model.summary())
 
 #### STARTING THE TRAINING PROCESS
-history = model.fit_generator(dataGen.flow(X_train,y_train,
+history = model.fit(dataGen.flow(X_train,y_train,
                                  batch_size=batchSizeVal),
                                  steps_per_epoch=stepsPerEpochVal,
                                  epochs=epochsVal,
@@ -161,5 +161,5 @@ print('Test Score = ',score[0])
 print('Test Accuracy =', score[1])
 
 #### SAVE THE TRAINED MODEL 
-model.save("weights/digits_weight_10.h5",save_format="h5")
+model.save("weights/digits_weight_10_mac.h5",save_format="h5")
 
